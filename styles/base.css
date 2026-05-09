@@ -20,13 +20,14 @@ header{
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    height: 6rem;
+    height: auto;
 }
 
-header h1 {
+header span {
     color: var(--primary-color);
     font-family: var(--heading-font);
     font-size: xx-large;
+    padding: 1rem;
 }
 
 header span{display: block;}
@@ -43,9 +44,9 @@ nav ul li {
 
 nav a {
     display: block;
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     padding: 10px 10px;
-    margin: 1px;
+    margin: 5px 1px;
     text-align: center;
     color: var(--primary-color);
     font-family: var(--heading-font);
@@ -54,7 +55,7 @@ nav a {
     text-decoration: none;
 }
 nav a:hover{
-    border: 5px solid var(--secondary-color);
+    background-color: var(--accent1-color);
     color: var(--secondary-color);
 }
 
@@ -74,13 +75,21 @@ main h2{
 
 }
 
+footer {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    font-family: var(--body-font);
+    font-size: medium;
+    text-align: center;
+    padding: 10px;
+}
+
 .card{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 3rem 1fr 3rem 1fr;
     margin: 10px;
     border: 20px solid var(--accent3-color);
-    corner-shape: round;
     border-radius: 5rem;
     overflow: hidden;
     background-color: var(--Background-color);
@@ -138,5 +147,5 @@ main h2{
 }
 
 #photoid{
-    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0px black;
 }
