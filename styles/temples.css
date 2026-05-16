@@ -31,15 +31,13 @@ header{
 }
 nav {
     background-color: var(--accent3-color);
-}
-
-.navigation {
     list-style: none;
     display: flex;
     flex-direction: column;
 }
 
-.navigation a{
+
+nav a{
     display: none;
     color: var(--primary-color);
     text-align: center;
@@ -48,7 +46,7 @@ nav {
     padding: 1rem;
 }
 
-.navigation a:hover {
+nav a:hover {
 	text-decoration: underline;
 	background-color: var(--accent1-color);
 	color: var(--secondary-color);
