@@ -4,11 +4,11 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-	.navigation {
+	nav {
 		justify-content: flex-end;
 		flex-direction: row;
 	}
-	.navigation a {
+	nav a {
         display: block;
 		flex: 1 1 100%;
 	}
