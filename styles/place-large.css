@@ -1,0 +1,63 @@
+:root {
+    --primary-color: #ddedee;
+    --secondary-color: #1a2c36;
+    --accent1-color: #4DA1A9;
+    --accent2-color: #2E5077;
+    --accent3-color: #253f5c;
+    --Background-color:#b8cbda;
+    --heading-font: "Google Sans", "Times new Roman", "Georgia", serif;
+    --body-font: "Lato", Arial, Helvetica, sans-serif;
+}
+@media (min-width: 740px) {
+ 
+img{
+    position:relative;
+    display: block;
+}
+
+#datalover{
+    position: absolute;
+    top: 400px;
+    margin: 3rem;
+    border-bottom: none;
+    grid-template-rows: auto;
+}
+
+#weatherlover{
+    position: absolute;
+    bottom: 400px;
+    right: 0;
+    margin: 3rem;
+    grid-template-rows: repeat(4, auto);
+}
+
+#datalover div, #weatherlover div{
+    display: block;
+    position: absolute;
+    left: -20px;
+    padding: 0.5rem 1rem;
+    width: 250px;
+    top: -30px;
+    text-align: right;
+    background-color: var(--accent2-color);
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(90deg,rgba(42, 123, 155, 0) 0%, var(--accent1-color), var(--accent2-color), var(--accent2-color));
+    color: var(--primary-color);
+}
+
+#datalover, #weatherlover{
+    display: grid;
+    background-color: var(--Background-color);
+    padding: 1rem 3rem;
+    border-radius: 30px;
+}
+
+.weathermenot::after {
+    content: "🌥️";
+}
+
+#weatherlover img{
+    display: none;
+}
+
+}

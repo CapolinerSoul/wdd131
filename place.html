@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Franco Sanchez</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Franco Sanchez">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Argentina</h1>
+    </header>
+    <main>
+        <div class="container">
+            <picture>
+                <source srcset="images/perito_moreno.webp" media="(min-width:740px)">
+                <img src="images/perito_small.webp" alt="" srcset="">
+            </picture>
+            <section id="datalover">
+                <div>
+                    <h2>Data</h2>
+                </div>
+                <p class="infotype"><b>Area:</b></p><p class="info">2,780,400 km2</p>
+                <p class="infotype"><b>Population:</b></p><p class="info">46 to 47 million</p>
+                <p class="infotype"><b>Capital:</b></p><p class="info">Buenos Aires</p>
+                <p class="infotype"><b>Languages:</b></p><p class="info">Spanish</p>
+                <p class="infotype"><b>Currency:</b></p><p class="info">Argentine Peso</p>
+                <p class="infotype"><b>Time Zone:</b></p><p class="info">UTC-03:00</p>
+                <p class="infotype"><b>Calling Code:</b></p><p class="info">+54</p>
+                <p class="infotype"><b>Internet TLD:</b></p><p class="info">.ar</p>
+            </section>
+            <section id="weatherlover">
+                <div>
+                    <h2 class="weathermenot">Weather</h2>
+                </div>
+                <img src="images/weather-icon.svg" alt="Weather Icon">
+                <p class="infotype"><b>Temperature:</b></p><p class="info" id="temp"></p>
+                <p class="infotype"><b>Conditions:</b></p><p class="info" id="cond"></p>
+                <p class="infotype"><b>Wind:</b></p><p class="info" id="wind"></p>
+                <p class="infotype"><b>Wind Chill:</b></p><p class="info" id="windc"></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Franco Sanchez - Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
