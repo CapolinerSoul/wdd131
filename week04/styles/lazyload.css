@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #ddedee;
+    --secondary-color: #D7E8BA;
+    --accent1-color: #4DA1A9;
+    --accent2-color: #2E5077;
+    --accent3-color: #253f5c;
+    --Background-color:#dab8b8;
+    --heading-font: "Google Sans", "Times new Roman", "Georgia", serif;
+    --body-font: "Lato", Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-family: var(--body-font);
+    font-size: xx-large;
+    margin-bottom: 1rem;
+}
+
+body {
+    background-color: var(--Background-color);
+}
+
+img{
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 400px;
+    height: 600px;
+    display: block;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0%{opacity: 0;}
+    100%{
+        opacity: 1;
+    }
+}
+
