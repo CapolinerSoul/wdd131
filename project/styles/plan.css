@@ -10,6 +10,7 @@
 --orange: #faa307ff;
 --amber-flame: #ffba08ff;
 --heading:"Archivo Black","lato", "google sans", sans-serif;
+--head:"Archivo Black";
 }
 
 *{
@@ -24,7 +25,7 @@ header{
     grid-template-columns: 75px 2fr 3fr;
 }
 header p{
-    font: "Archivo Black";
+    font: var(--head);
     font-size: xx-large;
     color: white;
     align-self: center;
