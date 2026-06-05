@@ -25,7 +25,7 @@ header{
     grid-template-columns: 75px 2fr 3fr;
 }
 header p{
-    font: var(--head);
+    font-family: var(--head);
     font-size: xx-large;
     color: white;
     align-self: center;
