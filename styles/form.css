@@ -1,7 +1,3 @@
-:root{
-  --text-color:rgb(73, 57, 39);
-}
-
 .container{
   display: block;
   margin: auto;
@@ -135,7 +131,9 @@ fieldset input[type="checkbox"]{
   color: var(--text-color);
   padding: 0.5rem;
 }
-
+.blu{
+  color: #48485c;
+}
 #formtit{
     color: white;
     padding: 1rem;
