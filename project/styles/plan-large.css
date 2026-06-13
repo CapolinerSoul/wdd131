@@ -1,0 +1,44 @@
+@media screen and (min-width: 700px) {
+
+.smallcontent{
+    grid-column: span 1;
+    grid-row: span 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#newvid iframe{
+    width: 400px;
+    height: 250px;
+}
+#newpostig{
+    width: 400px;
+}
+#newpostx{
+    width: 400px;
+}
+
+.mediumcontent{
+    grid-row:span 2;
+}
+
+.maintitle{
+    grid-column: span 2;
+}
+
+#absolute_container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5px;
+    margin: 2%;
+}
+    
+}
+
+.ask button{
+    background-color: var(--orange);
+    border: 2px solid black;
+    padding: 0.25rem;
+}

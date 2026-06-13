@@ -13,6 +13,9 @@
 --head:"Archivo Black";
 }
 
+.hidden{
+    display: none !important;
+}
 *{
     margin: 0;
     padding: 0;
@@ -56,31 +59,39 @@ h2{
 .smallcontent{
     grid-column: span 1;
     grid-row: span 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-#newvid img{
-    width: 200px;
+#newvid iframe{
+    width: 400px;
+    height: 250px;
+    align-self: center;
 }
-#newpostig img{
-    width: 200px;
+#newpostig {
+    width: 90%;
+    align-self: center;
 }
-#newpostx img{
-    width: 200px;
-    height: 75px;
+#newpostx {
+    width: 90%;
 }
 
 .mediumcontent{
-    grid-row:span 2;
+    grid-row:span 1;
+    text-align: center;
 }
 
 
 .maintitle{
-    grid-column: span 2;
+    grid-column: span 1;
 }
 
 #absolute_container{
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 100%;
     grid-gap: 5px;
     margin: 2%;
 }
@@ -91,4 +102,55 @@ footer{
     padding-bottom: 10px;
     color: white;
     padding-top: 5px;
+}
+
+.ask{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+#booper{
+    width: 200px;
+}
+.ask button{
+    background-color: var(--orange);
+    border: 2px solid var(--ink-black);
+    padding: 0.25rem;
+}
+
+#booper:hover{
+    background-color: var(--cayenne-red);
+}
+#booper:active{
+    background-color: var(--night-bordeaux);
+}
+
+#Question-Form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cayenne-red);
+    padding: 1rem;
+    font-family: var(--head);
+    border-radius: 1rem;
+    margin-top: 0.20rem;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.445);
+}
+
+#Question-Form input, #Question-Form textarea{
+    background-color: var(--amber-flame);
+    border: 1px solid var(--night-bordeaux);
+    border-radius: 5px;
+}
+
+#Question-Form button{
+    margin-top: 1rem;
+}
+
+#Question-Form button:hover{
+    background-color: var(--cayenne-red);
+}
+
+#Question-Form button:active{
+background-color: var(--night-bordeaux);
 }
