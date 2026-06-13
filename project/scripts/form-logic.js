@@ -10,9 +10,6 @@
         return;
     }
 
-    // ==========================================
-    // 1. CONTROL DE BLOQUEO (localStorage)
-    // ==========================================
     if (localStorage.getItem("questionSubmitted") === "true") {
         booperButton.classList.add("hidden");
         formContainer.classList.add("hidden");
@@ -20,18 +17,13 @@
         return; 
     }
 
-    // ==========================================
-    // 2. CORRECCIÓN DEL BOTÓN (YES / Nevermind)
-    // ==========================================
-    // Removemos cualquier evento previo para evitar duplicados al recargar el script de forma laxa
+
     booperButton.replaceWith(booperButton.cloneNode(true));
     const activeBooper = document.getElementById("booper");
 
     activeBooper.addEventListener("click", () => {
-        // Alternar visibilidad
         formContainer.classList.toggle("hidden");
 
-        // Condición corregida: Si tiene la clase 'hidden', el formulario está CERRADO (debe decir YES)
         if (formContainer.classList.contains("hidden")) {
             activeBooper.textContent = "YES";
         } else {
@@ -39,21 +31,16 @@
         }
     });
 
-    // ==========================================
-    // 3. ENVÍO DEL FORMULARIO
-    // ==========================================
     form.addEventListener("submit", (event) => {
         event.preventDefault(); 
 
-        // Incrementar el contador general requerido
         let completedReviews = parseInt(localStorage.getItem("reviewCount")) || 0;
         completedReviews += 1;
         localStorage.setItem("reviewCount", completedReviews);
 
-        // Bloquear futuros envíos
+
         localStorage.setItem("questionSubmitted", "true");
 
-        // Ocultar la interfaz por completo
         activeBooper.classList.add("hidden");
         formContainer.classList.add("hidden");
         lockMessage.classList.remove("hidden");
