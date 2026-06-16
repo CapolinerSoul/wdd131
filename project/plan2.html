@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capoliner Soul's Realm</title>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/plan.css">
+    <link rel="stylesheet" href="styles/plan-large.css">
+    <script src="scripts/plan.js" defer></script>
+    <script src="scripts/form-logic.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lato:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/souly_logo.webp" alt="souly_logo">
+        <p>CapolinerSoul</p>
+        <nav>
+            <a href="siteplan.html">Main Page</a>
+            <a href="plan2.html">Ask Me!</a>
+            <a href="plan3.html">Gallery</a>
+        </nav>
+    </header>
+    <section class="maintitle">
+            <h1>Welcome to the CapolinerSoul Official Q&A Section</h1>
+    </section>
+    <section class="ask" id="lazy-ask-section">
+                <h2>Is there something you wanna ask?</h2>
+                <button id="booper">YES</button>
+                <div id="notrepeating" class="hidden">
+                    <p>You already made your question, don't be greedy!</p>
+                </div>
+                <!-- Añadida la clase hidden aquí para que no parpadee al cargar la página -->
+                <div id="Q&A" class="hidden">
+                    <form id="Question-Form">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="question">Your question</label>
+                        <textarea name="question" id="question" required></textarea>
+                        <button type="submit">Submit question</button>
+                    </form>
+                </div>
+            </section>
+    <footer>
+        <p>©<span id="currentyear"></span> Franco Sanchez - Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+const photoplan = [
+    {   
+        photoName:"a",
+        imageUrl:"https://i.snapcdn.app/photo?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJodHRwczovL3Njb250ZW50LmNkbmluc3RhZ3JhbS5jb20vdi90NTEuODI3ODctMTUvNTczNjk2NTYzXzE4MzM2MzA2NzAzMjI4MjgyXzY1OTY0NDQ3NDQ4MTMyMjIzMV9uLmhlaWM_c3RwPWRzdC1qcGdfZTM1X3A0ODB4NDgwX3R0NiZfbmNfY2F0PTExMCZpZ19jYWNoZV9rZXk9TXpjMU5qQXlNVGszTnpneU9EZzRPVFExTnclM0QlM0QuMy1jY2I3LTUmY2NiPTctNSZfbmNfc2lkPTU4Y2RhZCZlZmc9ZXlKMlpXNWpiMlJsWDNSaFp5STZJa1pGUlVRdWVIQnBaSE11TVRBNE1DNXpaSEl1Y21WbmRXeGhjbDl3YUc5MGJ5NURNeUo5Jl9uY19vaGM9YkhYNElrc2JWeWdRN2tOdndIbGRNR3gmX25jX29jPUFkcF9RNjZxNG83ekxhV3lTZS1rQnAyTklfRm50N2JxMjVaRGc1YWNhSExyTEhXeUw5R2xSSk1ta0NnaDRLV3lLU3c2Q1h1TVVMRXFrdXlfMDNTb0V6YlEmX25jX2FkPXotbSZfbmNfY2lkPTAmX25jX3p0PTIzJl9uY19odD1zY29udGVudC1mcmE1LTEuY2RuaW5zdGFncmFtLmNvbSZfbmNfZ2lkPWN3TmwwWFJXZzU1UFdpS3dIWS1JdEEmX25jX3NzPTdhMjJlJm9oPTAwX0FmOE9feC1aZzlOR3hIS3ZVZW5kTU8tYWlab2s3YnVaUGdTXzl3aVg3d0VDQ3cmb2U9NkEzNzQzOUEiLCJmaWxlbmFtZSI6IlRodW1ibmFpbF81NzM2OTY1NjNfMTgzMzYzMDY3MDMyMjgyODJfNjU5NjQ0NDc0NDgxMzIyMjMxX24uanBnIiwibmJmIjoxNzgxNjMwODAyLCJleHAiOjE3ODE2MzQ0MDIsImlhdCI6MTc4MTYzMDgwMn0.vUx8ey-kF-LjcLgAWnl_R5AbOrhREPXUNyVVPUBOd8E"
+    },
+    {
+        photoName:"E",
+        imageUrl:"https://i.snapcdn.app/photo?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJodHRwczovL3Njb250ZW50LmNkbmluc3RhZ3JhbS5jb20vdi90NTEuODI3ODctMTUvNTcyNjA4NzEwXzE4MzM2MzA2NjczMjI4MjgyXzQxOTI4MDk3Nzk3ODAxNTA5MDZfbi5oZWljP3N0cD1kc3QtanBnX2UzNV9wNDgweDQ4MF90dDYmX25jX2NhdD0xMDYmaWdfY2FjaGVfa2V5PU16YzFOakF5TVRjMU9ERTJORGcwTWpZNU5nJTNEJTNELjMtY2NiNy01JmNjYj03LTUmX25jX3NpZD01OGNkYWQmZWZnPWV5SjJaVzVqYjJSbFgzUmhaeUk2SWtaRlJVUXVlSEJwWkhNdU1UQTRNQzV6WkhJdWNtVm5kV3hoY2w5d2FHOTBieTVETXlKOSZfbmNfb2hjPU1paDZHMG5NbnVjUTdrTnZ3RnAweDN1Jl9uY19vYz1BZHAtb3FfYUdla2YtWWFOOTBfM1FiclpEdUJIR2RQckFzMXhFak9NTWtxUGl3UUdHaW9zQUFmeUlncE13WU5KTDhEbTZxSzVRRldDUFhROW5zWG4teDRTJl9uY19hZD16LW0mX25jX2NpZD0wJl9uY196dD0yMyZfbmNfaHQ9c2NvbnRlbnQtZnJhNS0yLmNkbmluc3RhZ3JhbS5jb20mX25jX2dpZD1jd05sMFhSV2c1NVBXaUt3SFktSXRBJl9uY19zcz03YTIyZSZvaD0wMF9BZjktQ0pnOGdtcER3c25QdnJ5ZVBCWXY5OVFoeUNGNnFxVWVjUnlid1dTUGhRJm9lPTZBMzc1RTI5IiwiZmlsZW5hbWUiOiJUaHVtYm5haWxfNTcyNjA4NzEwXzE4MzM2MzA2NjczMjI4MjgyXzQxOTI4MDk3Nzk3ODAxNTA5MDZfbi5qcGciLCJuYmYiOjE3ODE2MzA4MDIsImV4cCI6MTc4MTYzNDQwMiwiaWF0IjoxNzgxNjMwODAyfQ.eiD3cRDa_CGi1it8Mt1kF9cWfOmxa4kaYBxolz6Q2D0"
+    }
+];
+
+createTempleCard(photoplan);
+
+
+function createTempleCard(photoaplan){
+	document.querySelector(".container_photos").innerHTML = "";
+	photoaplan.forEach(temple=>{
+	let card = document.createElement('section');
+	let name = document.createElement('h3');
+	let img = document.createElement('img');
+
+	name.textContent = temple.photoName;
+	img.setAttribute("src", temple.imageUrl);
+	img.setAttribute("alt", `${temple.photoName} Post`);
+	img.setAttribute("loading", "lazy");
+
+	card.appendChild(name);
+	card.appendChild(img);
+
+	document.querySelector(".container_photos").appendChild(card)
+	})
+}

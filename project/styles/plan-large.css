@@ -34,11 +34,27 @@
     grid-gap: 5px;
     margin: 2%;
 }
-    
-}
 
 .ask button{
     background-color: var(--orange);
     border: 2px solid black;
     padding: 0.25rem;
 }
+
+.container_photos{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap: 25px;
+	place-items: center;
+}
+
+header nav a{
+    padding: 1rem;
+    background-color: var(--black-cherry);
+    color: white;
+    text-decoration: none;
+    font-family: var(--head);
+}
+
+}
+
